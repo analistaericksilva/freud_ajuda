@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freud Ajuda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas"></canvas>
+
+    <!-- Caixa para perguntas -->
+    <div id="question-box" class="hidden">
+      <h2 id="character-name"></h2>
+      <p id="question-text">Pergunta aparecerá aqui...</p>
+      <div id="answers">
+        <button class="answer-btn" onclick="checkAnswer(0)">Resposta 1</button>
+        <button class="answer-btn" onclick="checkAnswer(1)">Resposta 2</button>
+        <button class="answer-btn" onclick="checkAnswer(2)">Resposta 3</button>
+      </div>
+    </div>
+
+    <!-- Tela de final de jogo -->
+    <div id="game-over-box" class="hidden">
+      <h1 id="game-over-text">Parabéns! Agora você é oficialmente um analista!</h1>
+      <button onclick="restartGame()">Jogar Novamente</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
